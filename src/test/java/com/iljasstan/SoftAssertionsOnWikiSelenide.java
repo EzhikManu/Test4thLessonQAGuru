@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.$;
 
-public class IsSoftAssertionsOnWikiSelenide {
+public class SoftAssertionsOnWikiSelenide {
     @Test
-    void isSoftAssertionsOnWikisPage() {
+    void shouldFindSoftAssertionsOnWikiPage() {
         Configuration.browser = "opera";
         Configuration.startMaximized = true;
         open("https://github.com");

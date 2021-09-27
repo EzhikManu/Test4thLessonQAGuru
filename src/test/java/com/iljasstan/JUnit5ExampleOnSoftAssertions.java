@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class IsJUnit5ExampleOnSoftAssertions {
+public class JUnit5ExampleOnSoftAssertions {
     @Test
     void shouldFindJUnit5Example() {
         Configuration.browser = "opera";

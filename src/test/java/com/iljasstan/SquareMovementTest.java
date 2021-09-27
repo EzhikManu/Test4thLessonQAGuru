@@ -13,10 +13,7 @@ public class SquareMovementTest {
     void shouldTestIsSquareMoved() {
         Configuration.browser = "opera";
         open("https://the-internet.herokuapp.com/drag_and_drop");
-        //it works!
         $("#column-a").dragAndDropTo($("#column-b"));
-        //actions().clickAndHold($("#column-a")).moveByOffset(0, 250).release().perform(); it doesn't work :(
-        //check
         $("#column-a").shouldHave(text("B"));
         $("#column-b").shouldHave(text("A"));
     }
